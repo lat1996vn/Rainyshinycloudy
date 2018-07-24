@@ -16,12 +16,15 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var imgWeatherType: UIImageView!
     @IBOutlet weak var lblWheatherType: UILabel!
     @IBOutlet weak var tbvWeather: UITableView!
+    var weather = CurrentWheather()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tbvWeather.dataSource = self
         tbvWeather.delegate = self
-        print(CURRENT_WEATHER_URL)
+        weather.downloadWeatherDetails {
+            //
+        }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 6
