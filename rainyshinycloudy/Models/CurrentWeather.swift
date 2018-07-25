@@ -38,7 +38,7 @@ class CurrentWheather {
         _currentTemp = 0.0
     }
     
-    func downloadWeatherDetails(completed: DownloadComplete) {
+    func downloadWeatherDetails(completed: @escaping DownloadComplete) {
         //Alamofira download
         let currentWeatherURL = URL(string: CURRENT_WEATHER_URL)!
         Alamofire.request(currentWeatherURL).responseJSON{ response in
@@ -48,7 +48,7 @@ class CurrentWheather {
                 if let name = dict["name"] as? String {
                     self._cityName = name
                 }
-                if let weather = dict["whather"] as? [Dictionary<String, AnyObject>] {
+                if let weather = dict["weather"] as? [Dictionary<String, AnyObject>] {
                     if let main = weather[0]["main"] as? String {
                         self._weatherType = main.capitalized
                     }
@@ -60,7 +60,7 @@ class CurrentWheather {
                     }
                 }
             }
+            completed()
         }
-        completed()
     }
 }

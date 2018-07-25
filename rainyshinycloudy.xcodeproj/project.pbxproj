@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253C525021081634009BC447 /* ForeCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253C524F21081634009BC447 /* ForeCast.swift */; };
+		253C525221081BEF009BC447 /* ForeCasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253C525121081BEF009BC447 /* ForeCasts.swift */; };
+		253C52572108360D009BC447 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253C52562108360D009BC447 /* WeatherCell.swift */; };
 		258F6B03210701A8007829E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F6B02210701A8007829E5 /* Constants.swift */; };
 		258F6B0521070553007829E5 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F6B0421070553007829E5 /* CurrentWeather.swift */; };
 		25E5825B2106BF7200BDAFE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E5825A2106BF7200BDAFE4 /* AppDelegate.swift */; };
@@ -38,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		0C34A31AA3760BE1D098C553 /* Pods-rainyshinycloudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rainyshinycloudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-rainyshinycloudy/Pods-rainyshinycloudy.release.xcconfig"; sourceTree = "<group>"; };
+		253C524F21081634009BC447 /* ForeCast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeCast.swift; sourceTree = "<group>"; };
+		253C525121081BEF009BC447 /* ForeCasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeCasts.swift; sourceTree = "<group>"; };
+		253C52562108360D009BC447 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		258F6B02210701A8007829E5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		258F6B0421070553007829E5 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		25E582572106BF7200BDAFE4 /* rainyshinycloudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rainyshinycloudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,10 +97,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		253C5254210835CE009BC447 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				253C52562108360D009BC447 /* WeatherCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		253C5255210835DC009BC447 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				25E5825C2106BF7200BDAFE4 /* WeatherVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		258F6B0621070626007829E5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				258F6B0421070553007829E5 /* CurrentWeather.swift */,
+				253C524F21081634009BC447 /* ForeCast.swift */,
+				253C525121081BEF009BC447 /* ForeCasts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,8 +158,9 @@
 			children = (
 				258F6B0721070633007829E5 /* Files */,
 				258F6B0621070626007829E5 /* Models */,
+				253C5254210835CE009BC447 /* Views */,
+				253C5255210835DC009BC447 /* Controller */,
 				25E5825A2106BF7200BDAFE4 /* AppDelegate.swift */,
-				25E5825C2106BF7200BDAFE4 /* WeatherVC.swift */,
 				25E5825E2106BF7200BDAFE4 /* Main.storyboard */,
 				25E582612106BF7300BDAFE4 /* Assets.xcassets */,
 				25E582632106BF7300BDAFE4 /* LaunchScreen.storyboard */,
@@ -344,9 +369,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				25E5825D2106BF7200BDAFE4 /* WeatherVC.swift in Sources */,
+				253C525021081634009BC447 /* ForeCast.swift in Sources */,
 				25E5825B2106BF7200BDAFE4 /* AppDelegate.swift in Sources */,
 				258F6B0521070553007829E5 /* CurrentWeather.swift in Sources */,
+				253C525221081BEF009BC447 /* ForeCasts.swift in Sources */,
 				258F6B03210701A8007829E5 /* Constants.swift in Sources */,
+				253C52572108360D009BC447 /* WeatherCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
