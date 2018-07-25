@@ -23,7 +23,7 @@ class WeatherCell: UITableViewCell {
         imgWeatherType.image = UIImage(named: foreCast.weatherType)
         lblDay.text = foreCast.date
         lblWeatherType.text = foreCast.weatherType
-        lblTempMax.text = "\(foreCast.tempMax)℃"
-        lblTempMin.text = "\(foreCast.tempMin)℃"
+        lblTempMax.text = String(format: "%.1f℃", foreCast.tempMax)
+        lblTempMin.text = String(format: "%.1f℃", foreCast.tempMin)
     }
 }

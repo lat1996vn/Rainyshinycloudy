@@ -32,6 +32,6 @@ class ForeCasts {
             }
             completed()
         }
-    print("test: \(self.count)")
+    //print("test: \(self.count)")
     }
 }
